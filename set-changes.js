@@ -1,16 +1,16 @@
 //_____Setzen aller Änderungen in Textfelder_____
 export function setChanges() {
-    let plz = `plz${country.toLowerCase()}`;
-    let norm = `norm${country.toLowerCase()}`;
-    let exp = `exp${country.toLowerCase()}`;
-    let pp10 = `ppzehn${country.toLowerCase()}`;
-    let pp12 = `ppzwoelf${country.toLowerCase()}`;
+    let plz = `plz${data.country.toLowerCase()}`;
+    let norm = `norm${data.country.toLowerCase()}`;
+    let exp = `exp${data.country.toLowerCase()}`;
+    let pp10 = `ppzehn${data.country.toLowerCase()}`;
+    let pp12 = `ppzwoelf${data.country.toLowerCase()}`;
     
     var transitTimeInput = document.getElementById('ikdnzx');
-    transitTimeInput.innerHTML  = itemPlz[norm];
+    transitTimeInput.innerHTML  = data.itemPlz[norm];
     
     var expressInput = document.getElementById('ik41qr');
-    if(itemPlz[exp]) {
+    if(data.itemPlz[exp]) {
         expressInput.innerHTML =  '✓';
         expressInput.style.color = 'green';
     } else { 
@@ -19,7 +19,7 @@ export function setChanges() {
     }
     
     var premiumPlus10Input = document.getElementById('ihlr3d');
-    if(itemPlz[pp10]) {
+    if(data.itemPlz[pp10]) {
         premiumPlus10Input.innerHTML =  '✓';
         premiumPlus10Input.style.color = 'green';
     } else {
@@ -28,7 +28,7 @@ export function setChanges() {
     }
     
     var premiumPlus12Input = document.getElementById('ilmrgl');
-    if(itemPlz[pp12]) {
+    if(data.itemPlz[pp12]) {
       premiumPlus12Input.innerHTML = '✓';
       premiumPlus12Input.style.color = 'green';
     } else {
@@ -37,7 +37,7 @@ export function setChanges() {
     }
     
     var cashOnDelivery = document.getElementById('ii3geg');
-    if(itemCod[country]) {
+    if(data.itemCod[data.country]) {
       cashOnDelivery.innerHTML = '✓';
       cashOnDelivery.style.color = 'green';
     } else {
@@ -46,7 +46,7 @@ export function setChanges() {
     }
     
     var fds = document.getElementById('icl8r5');
-    if(itemFds[country.toLowerCase()]) {
+    if(data.itemFds[data.country.toLowerCase()]) {
       fds.innerHTML = '✓';
       fds.color = 'green';
     } else {
@@ -55,14 +55,14 @@ export function setChanges() {
     }
     
     var payment = document.getElementById('ivpcnb');
-    itemPay[country] ? payment.innerHTML = itemPay[country] : payment.innerHTML = '0';
+    data.itemPay[data.country] ? payment.innerHTML = data.itemPay[data.country] : payment.innerHTML = '0';
     
     var paymentAmount = document.getElementById('i0vkkq');
-    itemPayAmount[country.toLowerCase()] ? paymentAmount.innerHTML = itemPayAmount[country.toLowerCase()] : paymentAmount.innerHTML = '0';
+    data.itemPayAmount[data.country.toLowerCase()] ? paymentAmount.innerHTML = data.itemPayAmount[data.country.toLowerCase()] : paymentAmount.innerHTML = '0';
     
     var dangerousGoods = document.getElementById('iiyudz');
-    if(itemDg[country.toLowerCase()]) {
-      dangerousGoods.innerHTML = itemDg[country.toLowerCase()]
+    if(data.itemDg[data.country.toLowerCase()]) {
+      dangerousGoods.innerHTML = data.itemDg[data.country.toLowerCase()]
       dangerousGoods.style.color = 'green';
     } else {
       dangerousGoods.innerHTML = 'X';
@@ -70,7 +70,7 @@ export function setChanges() {
     }
     
     var b2c = document.getElementById('is83cv');
-    if(itemB2c[country.toLowerCase()]) {
+    if(data.itemB2c[data.country.toLowerCase()]) {
       b2c.innerHTML = '✓';
       b2c.style.color = 'green';
     } else {
@@ -79,29 +79,30 @@ export function setChanges() {
     }
     
     var trasitInfo = document.getElementById('ijbq3f');
-    itemCom.transittime ? trasitInfo.innerHTML = itemCom.transittime : trasitInfo.innerHTML = '';
+    data.itemCom.transittime ? trasitInfo.innerHTML = data.itemCom.transittime : trasitInfo.innerHTML = '';
     
     var advancedInfo = document.getElementById('icw3nf');
-    itemCom.additionalcomments ? advancedInfo.innerHTML = itemCom.additionalcomments : advancedInfo.innerHTML = '';
+    data.itemCom.additionalcomments ? advancedInfo.innerHTML = data.itemCom.additionalcomments : advancedInfo.innerHTML = '';
     
     var addTransit = document.getElementById('i95hru');
-    itemCompany.randomnumber ? addTransit.innerHTML = itemCompany.randomnumber : addTransit.innerHTML = '';
+    data.itemCompany.randomnumber ? addTransit.innerHTML = data.itemCompany.randomnumber : addTransit.innerHTML = '';
     
+    var length = document-getElementById('zipLength');
+    data.itemLen[data.country] ? length.innerHTML = data.itemLen[data.country] : length.innerHTML = '';
+
     //Contact
-    console.log('depot', itemCompany.depot);
-    
     var depot = document.getElementById('depot');
-    itemCompany.depot ? depot.innerHTML = itemCompany.depot : depot.innerHTML = '';
+    data.itemCompany.somenumber ? depot.innerHTML = data.itemCompany.somenumber : depot.innerHTML = '';
     
     var company = document.getElementById('i1y0ow');
-    itemCompany.company ? company.innerHTML = itemCompany.company : company.innerHTML = '';
+    data.itemCompany.company ? company.innerHTML = data.itemCompany.company : company.innerHTML = '';
     
     var street = document.getElementById('itpxb');
-    itemCompany.street ? street.innerHTML = itemCompany.street : street.innerHTML = '';
+    data.itemCompany.street ? street.innerHTML = data.itemCompany.street : street.innerHTML = '';
     
     var zip = document.getElementById('in6sc');
-    itemCompany.location ? zip.innerHTML = itemCompany.location : zip.innerHTML = '';
+    data.itemCompany.location ? zip.innerHTML = data.itemCompany.location : zip.innerHTML = '';
     
     var phone = document.getElementById('phone');
-    itemCompany.phone ? phone.innerHTML = itemCompany.phone : phone.innerHTML = '';
+    data.itemCompany.phone ? phone.innerHTML = data.itemCompany.phone : phone.innerHTML = '';
 }

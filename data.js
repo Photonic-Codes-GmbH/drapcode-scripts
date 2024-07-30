@@ -10,5 +10,6 @@ export const data = {
     itemB2c: [],
     itemFds: [],
     itemInfo: [],
-    itemCompany: []
+    itemCompany: [],
+    itemLen: [],
 };
