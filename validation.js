@@ -1,12 +1,12 @@
-import { fetchPlzData } from "./fetch-postcode";
-import { fetchComData } from "./fetch-comments";
-import { fetchCodData } from "./fetch-cash-on-delivery";
-import { fetchPayData } from "./fetch-payment";
-import { fetchPayAmountData } from "./fetch-paymentamount";
-import { fetchB2cData } from "./fetch-b2c";
-import { fetchFdsData } from "./fetch-fixed-date-service";
-import { fetchCompanyData } from "./fetch-company-codes";
-import { data } from "./data";
+import { fetchPlzData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-postcode";
+import { fetchComData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-comments";
+import { fetchCodData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-cash-on-delivery";
+import { fetchPayData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-payment";
+import { fetchPayAmountData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-paymentamount";
+import { fetchB2cData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-b2c";
+import { fetchFdsData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-fixed-date-service";
+import { fetchCompanyData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-company-codes";
+import { data } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/data";
 
 //_____Event zum prüfen auf Änderungen vom Dropdown_____
 function handleDropdownChange() {

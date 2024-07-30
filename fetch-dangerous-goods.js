@@ -1,5 +1,5 @@
-import { data } from "./data";
-import { setChanges } from "./set-changes";
+import { data } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/data";
+import { setChanges } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/set-changes";
 
 //_____Datenbankabfrage für Dangerous goods_____
 export async function fetchPayAmountData() {
