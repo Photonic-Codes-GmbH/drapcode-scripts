@@ -3,7 +3,7 @@ import { setChanges } from "https://general-backend.testing.photonic-codes.cloud
 
 //_____Datenbankabfrage für Postleitzahl_____
 export async function fetchPlzData() {
-  const url = `https://systemplus-test6684.api.preview.drapcode.io/api/v1/developer/collection/mappe/items?plz${country.toLowerCase()}%3AEQUALS=${postcode}`;
+  const url = `https://systemplus-test6684.api.preview.drapcode.io/api/v1/developer/collection/mappe/items?plz${data.country.toLowerCase()}%3AEQUALS=${data.postcode}`;
   const apiKey = '23C4A-5599-46DB-A39C';
             
   try {

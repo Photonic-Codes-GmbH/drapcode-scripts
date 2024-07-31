@@ -20,6 +20,7 @@ export async function fetchPayAmountData() {
 
     const responseData = await response.json();
     data.itemPayAmount = responseData[0];
+    
     setChanges();
 
   } catch (error) {

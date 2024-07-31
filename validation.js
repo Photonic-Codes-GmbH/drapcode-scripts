@@ -12,7 +12,8 @@ import { data } from "https://general-backend.testing.photonic-codes.cloud/api/g
 export function handleDropdownChange() {
     var sourceDropdown = document.getElementById('igswy');
     data.country = sourceDropdown.options[sourceDropdown.selectedIndex].text;
-    checkAndFetchData()
+    fetchPostLengthData();
+    checkAndFetchData();
 }
 
 //_____Event zum prüfen auf Änderungen von der Postleitzahl_____
