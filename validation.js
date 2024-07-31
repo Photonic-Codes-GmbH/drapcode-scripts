@@ -1,12 +1,12 @@
-import { fetchB2cData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-b2c";
-import { fetchCodData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-cash-on-delivery";
-import { fetchComData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-comments";
-import { fetchPlzData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-postcode";
-import { fetchPayData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-payment";
-import { fetchPayAmountData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-paymentamount";
-import { fetchFdsData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-fixed-date-service";
-import { fetchCompanyData } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/fetch-company-codes";
-import { data } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/data";
+import { fetchB2cData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-b2c.js";
+import { fetchCodData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-cash-on-delivery.js";
+import { fetchComData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-comments.js";
+import { fetchPlzData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-postcode.js";
+import { fetchPayData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-payment.js";
+import { fetchPayAmountData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-paymentamount.js";
+import { fetchFdsData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-fixed-date-service.js";
+import { fetchCompanyData } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/fetch-company-codes.js";
+import { data } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/data.js";
 
 //_____Event zum prüfen auf Änderungen vom Dropdown_____
 function handleDropdownChange() {

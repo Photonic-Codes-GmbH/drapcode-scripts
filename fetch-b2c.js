@@ -1,5 +1,5 @@
-import { data } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/data";
-import { setChanges } from "https://github.com/Photonic-Codes-GmbH/drapcode-scripts/blob/main/set-changes";
+import { data } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/data.js";
+import { setChanges } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/set-changes.js";
 
 //_____Datenbankabfrage B2C_____
 export async function fetchB2cData() {
