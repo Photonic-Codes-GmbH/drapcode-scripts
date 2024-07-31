@@ -9,14 +9,14 @@ import { fetchCompanyData } from "https://general-backend.testing.photonic-codes
 import { data } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/data.js";
 
 //_____Event zum prüfen auf Änderungen vom Dropdown_____
-function handleDropdownChange() {
+export function handleDropdownChange() {
     var sourceDropdown = document.getElementById('igswy');
     data.country = sourceDropdown.options[sourceDropdown.selectedIndex].text;
     checkAndFetchData()
 }
 
 //_____Event zum prüfen auf Änderungen von der Postleitzahl_____
-function handlePostalcodeChange() {
+export function handlePostalcodeChange() {
     var userPostalcode = document.getElementById('iad2k');
     data.postcode = userPostalcode.value;
     checkAndFetchData();
@@ -33,6 +33,7 @@ function checkAndFetchData() {
         fetchB2cData();
         fetchFdsData();
         fetchCompanyData();
+        fetchDangerousGoods();
         
     } else {
         console.log('Warten auf gültige Werte für country und postcode.');

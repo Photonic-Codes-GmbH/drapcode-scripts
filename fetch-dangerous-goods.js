@@ -2,7 +2,7 @@ import { data } from "https://general-backend.testing.photonic-codes.cloud/api/g
 import { setChanges } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/set-changes.js";
 
 //_____Datenbankabfrage für Dangerous goods_____
-export async function fetchPayAmountData() {
+export async function fetchDangerousGoods() {
   const url = `https://systemplus-test6684.api.preview.drapcode.io/api/v1/developer/collection/dg/items`;
   const apiKey = '23C4A-5599-46DB-A39C';
             
