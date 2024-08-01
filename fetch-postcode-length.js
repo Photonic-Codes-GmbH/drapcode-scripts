@@ -1,5 +1,4 @@
 import { data } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/data.js";
-import { setChanges } from "https://general-backend.testing.photonic-codes.cloud/api/github/Photonic-Codes-GmbH/drapcode-scripts/main/set-changes.js";
 
 //_____Datenbankabfrage für Payment_____
 export async function fetchPostLengthData() {

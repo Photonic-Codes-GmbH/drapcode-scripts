@@ -1,6 +1,5 @@
 //_____Setzen aller Änderungen in Textfelder_____
 function setChanges() {
-  let plz = `plz${data.country.toLowerCase()}`;
   let norm = `norm${data.country.toLowerCase()}`;
   let exp = `exp${data.country.toLowerCase()}`;
   let pp10 = `ppzehn${data.country.toLowerCase()}`;
@@ -58,7 +57,7 @@ function setChanges() {
   data.itemPay[data.country] ? payment.innerHTML = data.itemPay[data.country] : payment.innerHTML = '0';
   
   var paymentAmount = document.getElementById('i0vkkq');
-  data.itemPayAmount[data.country.toLowerCase()] ? paymentAmount.innerHTML = data.itemPayAmount[data.country.toLowerCase()] : paymentAmount.innerHTML = '0';
+  data.itemPayAmount[data.country.toLowerCase()] ? paymentAmount.innerHTML = data.itemPayAmount[data.country.toLowerCase()].toString().replace('.', ',') : paymentAmount.innerHTML = '0';
   
   var dangerousGoods = document.getElementById('iiyudz');
   if(data.itemDg[data.country.toLowerCase()]) {

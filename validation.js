@@ -25,7 +25,7 @@ export function handlePostalcodeChange() {
 
 //_____Prüft ob Land und PLZ gewählt wurde_____
 function checkAndFetchData() {
-    if ((postcode !== '' && postcode.length > 3) && country !== '') {
+    if (data.postcode !== '' && data.country !== '') {
         fetchPlzData();
         fetchComData();
         fetchCodData();
